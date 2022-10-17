@@ -1,0 +1,126 @@
+/* No body temos a margem do corpo da página, modelo de fonte, cores de fundo e altura mínina de viewport*/
+bddy {
+    margin: 0;
+
+    font-family: 'Open Sans', sans-serif;
+
+    background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+
+    min-height: 100vh;
+}
+/* Page -  tamanho de toda página, margem da página */
+.page {
+    width: 1000px;
+    margin: 65px auto 0;
+}
+/* nav - navegação organização, posicionar o item, alinhar no centro todos os itens, margem do botão, */
+nav  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin-bottom: 55px;
+}
+/* ul estilização da lista, organização, tamanho da largura entre linhas*/
+ul {
+    display: flex;
+    gap: 48px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+a {
+    color: #1F1534;
+    text-decoration: none;
+}
+/* ul li e a aqui é a opacidade quando passa o mouse na lista, link */
+ul li a {
+    opacity: 0.5;
+}
+
+ul li a:hover {
+    font-weight: bold;
+    opacity: 1;
+}
+/* h1 e ul aqui está o modelo de fonte usado para o título e a lista*/
+h1, ul {
+    font-family: 'Mulish', sans-serif;
+}
+/* Main tag semântica moldar e organizar na caixa, centralizar os elementos, alinhamento dos itens */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* h1 estilização do título principal, modelo e tamano da fonte, cor, altura da linha, largura da caixa onde 
+está o texto */
+h1 {
+    font-size: 49px;
+    line-height: 56px;
+    color: #1F1534;
+
+    font-weight: normal;
+
+    width: 490px;
+}
+/* h1 span é a estilização da cor para destacar uma única ou mais palavras na sua descrição, e peso da fonte inserida 
+no projeto*/
+h1 span {
+    color: #89c5cc;
+    font-weight: bold;
+}
+/* Section 'p' é a estilização do 'parágrafo' como a fonte usada, margem, altura da linha,
+cor, tamanho da fonte */
+section p {
+    font-size: 14px;
+    line-height: 28px;
+    color: #7D7987;
+
+    margin: 40px 0;
+}
+/* Button é o botão da página, nesse projeto é toda a estilização do botão do 
+Whatssap, feito também as margens, alinhamento, bordas, movimento de cores no boão ao se movimentar, arredondamento
+dos cantos do elemento do button*/
+button {    
+        text-transform: uppercase;
+        font-family: 'Open Sans', sans-serif;
+        color:#000;
+    
+        background: #69B99D;
+        border: none;
+        padding: 14px 32px 15px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    
+        border-radius: 4px;
+    
+        cursor: pointer;
+    }
+/* hover é para hora que passar o mouse em cima a cor mudar do button*/
+    button:hover {
+        background: #25946b;
+    }
+/*  footer é o rodapé da página, tamanho de fonte, altura da linha, margem, centralização na página*/
+footer {
+    font-size: 14px;
+    line-height: 28px;
+
+    text-align: center;
+
+    margin-top: 80px;
+}
+/*  footer a - peso da fonte do rodapé*/
+footer a {
+    font-weight: bold;
+}
+/*  balls - posicionamento fixo das bolinhas, mesmo tendo rolagem ela não se moverá*/
+#balls {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
